@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Docs For Class RedirectUtil</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+						<script src="../../media/lib/classTree.js"></script>
+												<script language="javascript" type="text/javascript">
+				var imgPlus = new Image();
+				var imgMinus = new Image();
+				imgPlus.src = "../../media/images/plus.png";
+				imgMinus.src = "../../media/images/minus.png";
+				
+				function showNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgMinus.src;
+					oTable.style.display = "block";
+				}
+				
+				function hideNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgPlus.src;
+					oTable.style.display = "none";
+				}
+				
+				function nodeIsVisible(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+									break;
+							}
+					return (oTable && oTable.style.display == "block");
+				}
+				
+				function toggleNodeVisibility(Node){
+					if (nodeIsVisible(Node)){
+						hideNode(Node);
+					}else{
+						showNode(Node);
+					}
+				}
+			</script>
+					</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> RedirectUtil</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description"><strong>リダイレクトページ生成</strong></p>
+<p class="description"><p>Acsにリダイレクトするページを生成します。決済実行して、Acsフラグがオンで返却された場合に  利用します。</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> GMO PaymentGateway</li>
+				<li><span class="field">see:</span> <a href="../../com-gmo_pg-client/common/_com---gmo_pg---client---common---commonPackageInfo.php.html">commonPackageInfo.php</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_com---gmo_pg---client---common---RedirectUtil.php.html">/com/gmo_pg/client/common/RedirectUtil.php</a> (line <span class="field">17</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+					<a href="#$exception" title="details" class="var-name">$exception</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																							
+				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">RedirectUtil</span>
+										<a href="#RedirectUtil" title="details" class="method-name">RedirectUtil</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#auContinuanceStart" title="details" class="method-name">auContinuanceStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#auStart" title="details" class="method-name">auStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$startURL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$accessID</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$token</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#createRedirectPage" title="details" class="method-name">createRedirectPage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/AcsParam.html">AcsParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#docomoContinuanceStart" title="details" class="method-name">docomoContinuanceStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$startURL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$accessID</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$token</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#docomoStart" title="details" class="method-name">docomoStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/DocomoStartInput.html">DocomoStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">判定結果</span>
+										<a href="#isExceptionOccured" title="details" class="method-name">isExceptionOccured</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#jibunStart" title="details" class="method-name">jibunStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/JibunStartInput.html">JibunStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#linepayStart" title="details" class="method-name">linepayStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#mcpStart" title="details" class="method-name">mcpStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#netcashStart" title="details" class="method-name">netcashStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#paypalStart" title="details" class="method-name">paypalStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/PaypalStartParam.html">PaypalStartParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#rakutenIdStart" title="details" class="method-name">rakutenIdStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#recruitContinuanceStart" title="details" class="method-name">recruitContinuanceStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#recruitStart" title="details" class="method-name">recruitStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#sbContinuanceStart" title="details" class="method-name">sbContinuanceStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#sbStart" title="details" class="method-name">sbStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#unionpayStart" title="details" class="method-name">unionpayStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#webmoneyStart" title="details" class="method-name">webmoneyStart</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/WebmoneyStartParam.html">WebmoneyStartParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$exception" id="$exception"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+			<span class="var-name">$exception</span>
+						(line <span class="line-number">22</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> 例外</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodRedirectUtil" id="RedirectUtil"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor RedirectUtil</span> (line <span class="line-number">27</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">コンストラクタ</p>
+	
+	<div class="method-signature">
+		<span class="method-result">RedirectUtil</span>
+		<span class="method-name">
+			RedirectUtil
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodauContinuanceStart" id="auContinuanceStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">auContinuanceStart</span> (line <span class="line-number">387</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			auContinuanceStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauStart" id="auStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">auStart</span> (line <span class="line-number">167</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			auStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$startURL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$accessID</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$token</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$startURL</span><span class="var-description">: 支払手続き開始IFのURL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$accessID</span><span class="var-description">: 取引ID</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$token</span><span class="var-description">: トークン</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateRedirectPage" id="createRedirectPage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">createRedirectPage</span> (line <span class="line-number">38</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			createRedirectPage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/AcsParam.html">AcsParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/AcsParam.html">AcsParam</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    ACSパラメータ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddocomoContinuanceStart" id="docomoContinuanceStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">docomoContinuanceStart</span> (line <span class="line-number">257</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			docomoContinuanceStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$startURL</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$accessID</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$token</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$startURL</span><span class="var-description">: 支払手続き開始IFのURL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$accessID</span><span class="var-description">: 取引ID</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$token</span><span class="var-description">: トークン</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddocomoStart" id="docomoStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">docomoStart</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			docomoStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/DocomoStartInput.html">DocomoStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/DocomoStartInput.html">DocomoStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisExceptionOccured" id="isExceptionOccured"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isExceptionOccured</span> (line <span class="line-number">798</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">例外の発生を判定する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">判定結果</span>
+		<span class="method-name">
+			isExceptionOccured
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodjibunStart" id="jibunStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">jibunStart</span> (line <span class="line-number">298</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			jibunStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/JibunStartInput.html">JibunStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/JibunStartInput.html">JibunStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlinepayStart" id="linepayStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">linepayStart</span> (line <span class="line-number">570</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			linepayStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmcpStart" id="mcpStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">mcpStart</span> (line <span class="line-number">524</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mcpStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnetcashStart" id="netcashStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">netcashStart</span> (line <span class="line-number">432</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			netcashStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpaypalStart" id="paypalStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">paypalStart</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			paypalStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/PaypalStartParam.html">PaypalStartParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/PaypalStartParam.html">PaypalStartParam</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    Paypal支払開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrakutenIdStart" id="rakutenIdStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">rakutenIdStart</span> (line <span class="line-number">478</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rakutenIdStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrecruitContinuanceStart" id="recruitContinuanceStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">recruitContinuanceStart</span> (line <span class="line-number">754</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			recruitContinuanceStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrecruitStart" id="recruitStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">recruitStart</span> (line <span class="line-number">708</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			recruitStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsbContinuanceStart" id="sbContinuanceStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">sbContinuanceStart</span> (line <span class="line-number">662</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sbContinuanceStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsbStart" id="sbStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">sbStart</span> (line <span class="line-number">343</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sbStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunionpayStart" id="unionpayStart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">unionpayStart</span> (line <span class="line-number">616</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unionpayStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/SbStartInput.html">SbStartInput</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    支払手続き開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwebmoneyStart" id="webmoneyStart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">webmoneyStart</span> (line <span class="line-number">124</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">リダイレクトページの内容を作成する</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			webmoneyStart
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pagePath</span>, <span class="var-type"><a href="../../com-gmo_pg-client/input/WebmoneyStartParam.html">WebmoneyStartParam</a></span>&nbsp;<span class="var-name">$param</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pagePath</span><span class="var-description">: 雛形ページファイルへのパス</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encode</span><span class="var-description">: 雛形ページファイルの文字コード</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../com-gmo_pg-client/input/WebmoneyStartParam.html">WebmoneyStartParam</a></span>
+				<span class="var-name">$param</span><span class="var-description">: param    Webmoney支払開始パラメタ</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 20 Jul 2016 14:09:28 +0900 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

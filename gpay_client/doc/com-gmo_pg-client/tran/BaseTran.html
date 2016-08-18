@@ -1,0 +1,2194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Docs For Class BaseTran</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+						<script src="../../media/lib/classTree.js"></script>
+												<script language="javascript" type="text/javascript">
+				var imgPlus = new Image();
+				var imgMinus = new Image();
+				imgPlus.src = "../../media/images/plus.png";
+				imgMinus.src = "../../media/images/minus.png";
+				
+				function showNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgMinus.src;
+					oTable.style.display = "block";
+				}
+				
+				function hideNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgPlus.src;
+					oTable.style.display = "none";
+				}
+				
+				function nodeIsVisible(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+									break;
+							}
+					return (oTable && oTable.style.display == "block");
+				}
+				
+				function toggleNodeVisibility(Node){
+					if (nodeIsVisible(Node)){
+						hideNode(Node);
+					}else{
+						showNode(Node);
+					}
+				}
+			</script>
+					</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/AbstractClass_logo.png"
+														alt="Abstract Class"
+														title="Abstract Class"
+														style="vertical-align: middle"> BaseTran</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">author:</span> GMO PaymentGateway</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">see:</span> <a href="../../com-gmo_pg-client/tran/_com---gmo_pg---client---tran---tranPackageInfo.php.html">tranPackageInfo.php</a></li>
+				<li><span class="field">abstract:</span> <strong>API 基底クラス</strong></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_com---gmo_pg---client---tran---BaseTran.php.html">/com/gmo_pg/client/tran/BaseTran.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AlterTran.html">AlterTran</a>
+					</td>
+					<td>
+											<strong>取引変更 実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AlterTranMagstripe.html">AlterTranMagstripe</a>
+					</td>
+					<td>
+											<strong>クレジットカード決済決済変更　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AssignVirtualaccount.html">AssignVirtualaccount</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)継続口座登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AuCancelReturn.html">AuCancelReturn</a>
+					</td>
+					<td>
+											<strong>auかんたん決済決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AuContinuanceCancel.html">AuContinuanceCancel</a>
+					</td>
+					<td>
+											<strong>auかんたん決済継続課金決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AuContinuanceChargeCancel.html">AuContinuanceChargeCancel</a>
+					</td>
+					<td>
+											<strong>auかんたん決済継続課金決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/AuSales.html">AuSales</a>
+					</td>
+					<td>
+											<strong>auかんたん決済売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/BookSalesProcess.html">BookSalesProcess</a>
+					</td>
+					<td>
+											<strong>実売予約　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/CancelAuthPaypal.html">CancelAuthPaypal</a>
+					</td>
+					<td>
+											<strong>Paypal仮売上取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/CancelTranPaypal.html">CancelTranPaypal</a>
+					</td>
+					<td>
+											<strong>Paypal払い戻し　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ChangeRecurring.html">ChangeRecurring</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上定義金額変更　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ChangeTran.html">ChangeTran</a>
+					</td>
+					<td>
+											<strong>金額変更 実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/CheckLinepayRegKey.html">CheckLinepayRegKey</a>
+					</td>
+					<td>
+											<strong>LINE PayRegKey利用可否チェック　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/CvsCancel.html">CvsCancel</a>
+					</td>
+					<td>
+											<strong>コンビニキャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DeleteAuOpenID.html">DeleteAuOpenID</a>
+					</td>
+					<td>
+											<strong>auかんたん決済OpenID解除　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DeleteCard.html">DeleteCard</a>
+					</td>
+					<td>
+											<strong>カード削除 実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DeleteLinepayRegKey.html">DeleteLinepayRegKey</a>
+					</td>
+					<td>
+											<strong>LINE PayRegKey満了　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DeleteMember.html">DeleteMember</a>
+					</td>
+					<td>
+											<strong>会員削除　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoCancelReturn.html">DocomoCancelReturn</a>
+					</td>
+					<td>
+											<strong>ドコモケータイ払い決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceCancelReturn.html">DocomoContinuanceCancelReturn</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceSales.html">DocomoContinuanceSales</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceShopChange.html">DocomoContinuanceShopChange</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　継続課金変更(加盟店)　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceShopEnd.html">DocomoContinuanceShopEnd</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　継続課金終了(加盟店)　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceUserChange.html">DocomoContinuanceUserChange</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　継続課金変更(お客様)　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoContinuanceUserEnd.html">DocomoContinuanceUserEnd</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　継続課金終了(お客様)　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/DocomoSales.html">DocomoSales</a>
+					</td>
+					<td>
+											<strong>ドコモケータイ払い売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTran.html">EntryTran</a>
+					</td>
+					<td>
+											<strong>取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranAu.html">EntryTranAu</a>
+					</td>
+					<td>
+											<strong>auかんたん決済取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranAuContinuance.html">EntryTranAuContinuance</a>
+					</td>
+					<td>
+											<strong>auかんたん決済継続課金取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranCvs.html">EntryTranCvs</a>
+					</td>
+					<td>
+											<strong>コンビニ取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranDocomo.html">EntryTranDocomo</a>
+					</td>
+					<td>
+											<strong>ドコモケータイ払い取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranDocomoContinuance.html">EntryTranDocomoContinuance</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranEdy.html">EntryTranEdy</a>
+					</td>
+					<td>
+											<strong>モバイルEdy取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranJcbPreca.html">EntryTranJcbPreca</a>
+					</td>
+					<td>
+											<strong>JCBプリカ取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranJibun.html">EntryTranJibun</a>
+					</td>
+					<td>
+											<strong>じぶん銀行決済取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranLinepay.html">EntryTranLinepay</a>
+					</td>
+					<td>
+											<strong>LINE Pay取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranMcp.html">EntryTranMcp</a>
+					</td>
+					<td>
+											<strong>多通貨クレジットカード取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranNetcash.html">EntryTranNetcash</a>
+					</td>
+					<td>
+											<strong>NET CASH取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranPayEasy.html">EntryTranPayEasy</a>
+					</td>
+					<td>
+											<strong>PayEasy取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranPaypal.html">EntryTranPaypal</a>
+					</td>
+					<td>
+											<strong>Paypal取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranRakutenId.html">EntryTranRakutenId</a>
+					</td>
+					<td>
+											<strong>楽天ID取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranRecruit.html">EntryTranRecruit</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranRecruitContinuance.html">EntryTranRecruitContinuance</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い継続課金取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranSb.html">EntryTranSb</a>
+					</td>
+					<td>
+											<strong>ソフトバンクケータイ支払い取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranSbContinuance.html">EntryTranSbContinuance</a>
+					</td>
+					<td>
+											<strong>ソフトバンク継続取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranSuica.html">EntryTranSuica</a>
+					</td>
+					<td>
+											<strong>モバイルSuica取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranUnionpay.html">EntryTranUnionpay</a>
+					</td>
+					<td>
+											<strong>ネット銀聯取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranVirtualaccount.html">EntryTranVirtualaccount</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/EntryTranWebmoney.html">EntryTranWebmoney</a>
+					</td>
+					<td>
+											<strong>Webmoney取引登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecFraudScreening.html">ExecFraudScreening</a>
+					</td>
+					<td>
+											<strong>不正防止実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTran.html">ExecTran</a>
+					</td>
+					<td>
+											<strong>決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranAu.html">ExecTranAu</a>
+					</td>
+					<td>
+											<strong>auかんたん決済決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranAuContinuance.html">ExecTranAuContinuance</a>
+					</td>
+					<td>
+											<strong>auかんたん決済継続課金決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranCvs.html">ExecTranCvs</a>
+					</td>
+					<td>
+											<strong>コンビニ決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranDocomo.html">ExecTranDocomo</a>
+					</td>
+					<td>
+											<strong>ドコモケータイ払い決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranDocomoContinuance.html">ExecTranDocomoContinuance</a>
+					</td>
+					<td>
+											<strong>ドコモ継続決済　決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranEdy.html">ExecTranEdy</a>
+					</td>
+					<td>
+											<strong>モバイルEdy決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranJcbPreca.html">ExecTranJcbPreca</a>
+					</td>
+					<td>
+											<strong>JCBプリカ決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranJibun.html">ExecTranJibun</a>
+					</td>
+					<td>
+											<strong>じぶん銀行決済決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranLinepay.html">ExecTranLinepay</a>
+					</td>
+					<td>
+											<strong>LINE Pay決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranMagstripe.html">ExecTranMagstripe</a>
+					</td>
+					<td>
+											<strong>クレジットカード決済決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranMcp.html">ExecTranMcp</a>
+					</td>
+					<td>
+											<strong>多通貨クレジットカード決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranNetcash.html">ExecTranNetcash</a>
+					</td>
+					<td>
+											<strong>NET CASH決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranPayEasy.html">ExecTranPayEasy</a>
+					</td>
+					<td>
+											<strong>PayEasy決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranPaypal.html">ExecTranPaypal</a>
+					</td>
+					<td>
+											<strong>Paypal決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranRakutenId.html">ExecTranRakutenId</a>
+					</td>
+					<td>
+											<strong>楽天ID決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranRecruit.html">ExecTranRecruit</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranRecruitContinuance.html">ExecTranRecruitContinuance</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い継続課金決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranSb.html">ExecTranSb</a>
+					</td>
+					<td>
+											<strong>ソフトバンクケータイ支払い決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranSbContinuance.html">ExecTranSbContinuance</a>
+					</td>
+					<td>
+											<strong>ソフトバンク継続決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranSuica.html">ExecTranSuica</a>
+					</td>
+					<td>
+											<strong>モバイルSuica決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranUnionpay.html">ExecTranUnionpay</a>
+					</td>
+					<td>
+											<strong>ネット銀聯決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranVirtualaccount.html">ExecTranVirtualaccount</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ExecTranWebmoney.html">ExecTranWebmoney</a>
+					</td>
+					<td>
+											<strong>Webmoney決済実行　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/FreeVirtualaccount.html">FreeVirtualaccount</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)継続口座解除　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/InquiryVirtualaccountTransfer.html">InquiryVirtualaccountTransfer</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)専有口座入金履歴取得　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/JcbPrecaBalanceInquiry.html">JcbPrecaBalanceInquiry</a>
+					</td>
+					<td>
+											<strong>JCBプリカ残高照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/JcbPrecaCancel.html">JcbPrecaCancel</a>
+					</td>
+					<td>
+											<strong>JCBプリカキャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/LinepayCancelReturn.html">LinepayCancelReturn</a>
+					</td>
+					<td>
+											<strong>LINE Payキャンセル・返品　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/LinepaySales.html">LinepaySales</a>
+					</td>
+					<td>
+											<strong>LINE Pay売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/ListVirtualaccount.html">ListVirtualaccount</a>
+					</td>
+					<td>
+											<strong>銀行振込(バーチャル口座)専有口座一覧取得　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/Maillinkstart.html">Maillinkstart</a>
+					</td>
+					<td>
+											<strong>メールリンク決済開始　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/McpCancel.html">McpCancel</a>
+					</td>
+					<td>
+											<strong>多通貨クレジットカードキャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/McpSales.html">McpSales</a>
+					</td>
+					<td>
+											<strong>多通貨クレジットカード実売上　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/PayEasyCancel.html">PayEasyCancel</a>
+					</td>
+					<td>
+											<strong>PayEasyキャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/PaypalSales.html">PaypalSales</a>
+					</td>
+					<td>
+											<strong>Paypal決済実売上　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RakutenIdCancel.html">RakutenIdCancel</a>
+					</td>
+					<td>
+											<strong>楽天IDキャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RakutenIdChange.html">RakutenIdChange</a>
+					</td>
+					<td>
+											<strong>楽天ID金額変更　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RakutenIdSales.html">RakutenIdSales</a>
+					</td>
+					<td>
+											<strong>楽天ID売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitCancel.html">RecruitCancel</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い決済キャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitChange.html">RecruitChange</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い金額変更　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitContinuanceCancel.html">RecruitContinuanceCancel</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い継続課金解約　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitContinuanceChange.html">RecruitContinuanceChange</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い継続課金金額変更　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitContinuanceChargeCancel.html">RecruitContinuanceChargeCancel</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い継続課金課金データ取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitSales.html">RecruitSales</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払い売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RecruitUpdateAuth.html">RecruitUpdateAuth</a>
+					</td>
+					<td>
+											<strong>リクルートかんたん支払いオーソリ期限延長　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RegisterRecurringAccounttrans.html">RegisterRecurringAccounttrans</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上登録(口座振替)　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/RegisterRecurringCredit.html">RegisterRecurringCredit</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SaveCard.html">SaveCard</a>
+					</td>
+					<td>
+											<strong>カード登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SaveMember.html">SaveMember</a>
+					</td>
+					<td>
+											<strong>会員登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SbCancel.html">SbCancel</a>
+					</td>
+					<td>
+											<strong>ソフトバンクケータイ支払い決済取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SbContinuanceCancel.html">SbContinuanceCancel</a>
+					</td>
+					<td>
+											<strong>ソフトバンク継続解約　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SbContinuanceChargeCancel.html">SbContinuanceChargeCancel</a>
+					</td>
+					<td>
+											<strong>ソフトバンク継続課金データ取消　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SbSales.html">SbSales</a>
+					</td>
+					<td>
+											<strong>ソフトバンクケータイ支払い売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchBookingInfo.html">SearchBookingInfo</a>
+					</td>
+					<td>
+											<strong>実売予約照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchCard.html">SearchCard</a>
+					</td>
+					<td>
+											<strong>カード照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchCardReverse.html">SearchCardReverse</a>
+					</td>
+					<td>
+											<strong>逆引き会員ID検索　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchMember.html">SearchMember</a>
+					</td>
+					<td>
+											<strong>会員照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchRecurring.html">SearchRecurring</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上定義照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchRecurringResult.html">SearchRecurringResult</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上結果照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchTrade.html">SearchTrade</a>
+					</td>
+					<td>
+											<strong>取引照会　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/SearchTradeMulti.html">SearchTradeMulti</a>
+					</td>
+					<td>
+											<strong>取引照会MULTI　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/TdVerify.html">TdVerify</a>
+					</td>
+					<td>
+											<strong>3D認証後決済　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/TradedCard.html">TradedCard</a>
+					</td>
+					<td>
+											<strong>取引後カード登録　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UnbookSalesProcess.html">UnbookSalesProcess</a>
+					</td>
+					<td>
+											<strong>実売予約キャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UnionpayCancel.html">UnionpayCancel</a>
+					</td>
+					<td>
+											<strong>ネット銀聯キャンセル　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UnionpayReturn.html">UnionpayReturn</a>
+					</td>
+					<td>
+											<strong>ネット銀聯返品　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UnionpaySales.html">UnionpaySales</a>
+					</td>
+					<td>
+											<strong>ネット銀聯売上確定　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UnregisterRecurring.html">UnregisterRecurring</a>
+					</td>
+					<td>
+											<strong>自動売上自動売上定義解除　実行クラス</strong>
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../com-gmo_pg-client/tran/UpdateMember.html">UpdateMember</a>
+					</td>
+					<td>
+											<strong>会員更新　実行クラス</strong>
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+					<a href="#$exception" title="details" class="var-name">$exception</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../com-gmo_pg-client/common/Log.html">Log</a></span>
+					<a href="#$log" title="details" class="var-name">$log</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$user" title="details" class="var-name">$user</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$version" title="details" class="var-name">$version</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																															
+				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">BaseTran</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">BaseTran</span>
+										<a href="#BaseTran" title="details" class="method-name">BaseTran</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../com-gmo_pg-client/common/IgnoreCaseMap.html">IgnoreCaseMap</a></span>
+										<a href="#callProtocol" title="details" class="method-name">callProtocol</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../com-gmo_pg-client/common/IgnoreCaseMap.html">IgnoreCaseMap</a></span>
+										<a href="#callProtocol_" title="details" class="method-name">callProtocol_</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$urlConnect</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$urlConnect</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+										<a href="#getException" title="details" class="method-name">&amp;getException</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isExceptionOccured" title="details" class="method-name">isExceptionOccured</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#recvData" title="details" class="method-name">recvData</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$retData</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#sendData" title="details" class="method-name">sendData</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$urlConnect</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$urlConnect</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$exception" id="$exception"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+			<span class="var-name">$exception</span>
+						(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> 独自例外</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$log" id="$log"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../com-gmo_pg-client/common/Log.html">Log</a></span>
+			<span class="var-name">$log</span>
+						(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> 独自ログクラス</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$user" id="$user"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$user</span>
+			 = <span class="var-default"> 'MODP-3.110.137'</span>			(line <span class="line-number">20</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$version" id="$version"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$version</span>
+			 = <span class="var-default"> '137'</span>			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">43</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">コンストラクタ</p>
+	
+	<div class="method-signature">
+		<span class="method-result">BaseTran</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../com-gmo_pg-client/tran/AlterTran.html#method__construct">AlterTran::__construct()</a>
+								: コンストラクタ
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/ChangeTran.html#method__construct">ChangeTran::__construct()</a>
+								: コンストラクタ
+							</li>
+				</ul>
+	</div>
+<a name="methodBaseTran" id="BaseTran"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor BaseTran</span> (line <span class="line-number">36</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">コンストラクタ</p>
+	
+	<div class="method-signature">
+		<span class="method-result">BaseTran</span>
+		<span class="method-name">
+			BaseTran
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcallProtocol" id="callProtocol"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">callProtocol</span> (line <span class="line-number">218</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプを呼び出し、結果を返す。  呼び出し先のURLはクラス名をもとに取得する。</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 出力パラメータマップ</li>
+				<li><span class="field">exception:</span> GPayException</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../com-gmo_pg-client/common/IgnoreCaseMap.html">IgnoreCaseMap</a></span>
+		<span class="method-name">
+			callProtocol
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$params</span><span class="var-description">: プロトコルタイプへ送信するパラメータ文字列</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcallProtocol_" id="callProtocol_"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">callProtocol_</span> (line <span class="line-number">163</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプを呼び出し、結果を返す。</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 出力パラメータマップ</li>
+				<li><span class="field">exception:</span> GPayException</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../com-gmo_pg-client/common/IgnoreCaseMap.html">IgnoreCaseMap</a></span>
+		<span class="method-name">
+			callProtocol_
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: プロトコルタイプへのURL文字列</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$params</span><span class="var-description">: プロトコルタイプへ送信するパラメータ文字列</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">connect</span> (line <span class="line-number">53</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプのURLへ接続する。</p>
+	<ul class="tags">
+				<li><span class="field">exception:</span> GPayException</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: プロトコルタイプへのURL文字列</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">disconnect</span> (line <span class="line-number">100</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプのURLへの接続を解除する。</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$urlConnect</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$urlConnect</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$urlConnect</span><span class="var-description">: プロトコルタイプへのURL接続</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$urlConnect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetException" id="getException"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">getException</span> (line <span class="line-number">252</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">例外を返す</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 例外</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../com-gmo_pg-client/common/GPayException.html">GPayException</a></span>
+		<span class="method-name">
+			&amp;getException
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisExceptionOccured" id="isExceptionOccured"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isExceptionOccured</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">例外の発生を判定する</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 判定結果(true = 例外発生)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isExceptionOccured
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrecvData" id="recvData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">recvData</span> (line <span class="line-number">143</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプのURLから戻り値を読み出す。</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> 戻り値</li>
+				<li><span class="field">exception:</span> GPayException</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			recvData
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$retData</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$retData</span><span class="var-description">: プロトコルタイプへのURL接続</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../com-gmo_pg-client/tran/BookSalesProcess.html#methodrecvData">BookSalesProcess::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTran.html#methodrecvData">EntryTran::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranAu.html#methodrecvData">EntryTranAu::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranAuContinuance.html#methodrecvData">EntryTranAuContinuance::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranCvs.html#methodrecvData">EntryTranCvs::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranDocomo.html#methodrecvData">EntryTranDocomo::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranDocomoContinuance.html#methodrecvData">EntryTranDocomoContinuance::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranEdy.html#methodrecvData">EntryTranEdy::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranJibun.html#methodrecvData">EntryTranJibun::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranPayEasy.html#methodrecvData">EntryTranPayEasy::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranPaypal.html#methodrecvData">EntryTranPaypal::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranSb.html#methodrecvData">EntryTranSb::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranSuica.html#methodrecvData">EntryTranSuica::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/EntryTranWebmoney.html#methodrecvData">EntryTranWebmoney::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/SearchBookingInfo.html#methodrecvData">SearchBookingInfo::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+					<li>
+				<a href="../../com-gmo_pg-client/tran/UnbookSalesProcess.html#methodrecvData">UnbookSalesProcess::recvData()</a>
+								: プロトコルタイプのURLから戻り値を読み出す。  文字列を復号化して戻します。
+							</li>
+				</ul>
+	</div>
+<a name="methodsendData" id="sendData"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">sendData</span> (line <span class="line-number">113</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">プロトコルタイプのURLへデータを送信する。</p>
+	<ul class="tags">
+				<li><span class="field">exception:</span> GPayException</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sendData
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$urlConnect</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$params</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$urlConnect</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$urlConnect</span><span class="var-description">: プロトコルタイプへのURL接続</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$params</span><span class="var-description">: プロトコルタイプへ送信するパラメータ文字列</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$urlConnect</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 20 Jul 2016 14:08:51 +0900 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
